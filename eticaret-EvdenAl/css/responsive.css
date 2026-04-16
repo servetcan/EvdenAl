@@ -1,0 +1,24 @@
+/* Responsive styles */
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .table-responsive {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

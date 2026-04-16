@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı - EvdenAl</title>
+    <link rel="icon" type="image/png" href="assets/images/EvdenAl.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/EvdenAl.png" alt="EvdenAl"> EvdenAl</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-list.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Sepet</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Kayıt Ol</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="productImage" src="" class="img-fluid rounded shadow" alt="Ürün Görseli">
+                <div class="mt-3">
+                    <small class="text-muted">* Görsel temsilidir, gerçek ürün farklılık gösterebilir.</small>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 id="productName" class="mb-3"></h2>
+                <div class="mb-3">
+                    <span class="badge bg-success">Stokta Var</span>
+                    <span class="badge bg-warning text-dark ms-2">Hızlı Teslimat</span>
+                </div>
+                <p id="productDescription" class="lead">Bu yüksek kaliteli ürün, günlük yaşamınızı kolaylaştıracak özelliklerle donatılmıştır. Dayanıklı malzemelerden üretilmiş, uzun ömürlü kullanım sunar. Müşteri memnuniyeti garantisi ile güvenle satın alın!</p>
+                <h4 id="productPrice" class="text-danger fw-bold mb-3"></h4>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Adet:</label>
+                    <input type="number" id="quantity" class="form-control" value="1" min="1" style="width: 80px;">
+                </div>
+                <button class="btn btn-success btn-lg me-2" id="addToCartBtn"><i class="fas fa-cart-plus me-1"></i>Sepete Ekle</button>
+                <button class="btn btn-outline-primary btn-lg"><i class="fas fa-heart me-1"></i>Favorilere Ekle</button>
+                <div class="mt-3">
+                    <small class="text-muted">Ücretsiz kargo ile kapınızda! 30 gün iade garantisi.</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Özellikler -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">Ürün Özellikleri</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped" id="productFeatures">
+                        <tbody>
+                            <tr><td><strong>Malzeme:</strong></td><td>Yüksek kaliteli plastik</td></tr>
+                            <tr><td><strong>Boyutlar:</strong></td><td>10x5x2 cm</td></tr>
+                            <tr><td><strong>Ağırlık:</strong></td><td>200g</td></tr>
+                            <tr><td><strong>Renk:</strong></td><td>Çoklu renk seçenekleri</td></tr>
+                            <tr><td><strong>Garanti:</strong></td><td>2 yıl üretici garantisi</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detaylı Açıklama -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">Detaylı Ürün Açıklaması</h3>
+                <p>Bu ürün, modern teknolojinin sunduğu en iyi özellikleri bir araya getirerek tasarlanmıştır. Kullanım kolaylığı, şık tasarımı ve yüksek performansı ile öne çıkar. Evinizde veya ofisinizde rahatlıkla kullanabileceğiniz bu ürün, yaşam kalitenizi artıracaktır.</p>
+                <p><strong>Neden Bu Ürünü Tercih Etmelisiniz?</strong></p>
+                <ul>
+                    <li>Yüksek kalite standartlarında üretilmiştir.</li>
+                    <li>Uzun ömürlü ve dayanıklıdır.</li>
+                    <li>Müşteri desteği 7/24 mevcuttur.</li>
+                    <li>Çevre dostu malzemeler kullanılmıştır.</li>
+                </ul>
+                <p>Bu fırsatı kaçırmayın! Sınırlı stok ile sunulmaktadır.</p>
+            </div>
+        </div>
+
+        <!-- Müşteri Yorumları -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">Müşteri Yorumları</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                            </div>
+                            <div>
+                                <h6 class="card-title">Ahmet Y.</h6>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="card-text">Harika bir ürün! Kesinlikle tavsiye ederim. Kalitesi beklentilerimin üstünde.</p>
+                                <small class="text-muted">2 hafta önce</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <i class="fas fa-user-circle fa-2x text-secondary"></i>
+                            </div>
+                            <div>
+                                <h6 class="card-title">Ayşe K.</h6>
+                                <div class="mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="card-text">İyi bir alışveriş deneyimi yaşadım. Teslimat hızlıydı.</p>
+                                <small class="text-muted">1 ay önce</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benzer Ürünler -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">Benzer Ürünler</h3>
+                <div class="row" id="similarProducts">
+                    <!-- Benzer ürünler JS ile eklenecek -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>EvdenAl</h5>
+                    <p>Güvenli ve hızlı alışverişin adresi. Binlerce ürün sizi bekliyor!</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="product-list.html">Ürünler</a></li>
+                        <li><a href="cart.html">Sepet</a></li>
+                        <li><a href="login.html">Giriş Yap</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>İletişim</h5>
+                    <p><i class="fas fa-phone me-2"></i>+90 555 123 45 67</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@evdenal.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Bizi Takip Edin</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 EvdenAl. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get('id'));
+            const product = products.find(p => p.id === productId);
+            if (product) {
+                document.getElementById('productImage').src = product.image;
+                document.getElementById('productName').textContent = product.name;
+                const discountedPrice = product.discount ? (product.price * (1 - product.discount)).toFixed(2) : product.price;
+                const priceDisplay = product.discount ?
+                    `<span class="text-decoration-line-through text-muted">${product.price} TL</span> <span class="text-danger fw-bold">${discountedPrice} TL</span> <span class="badge bg-danger">-${(product.discount * 100).toFixed(0)}%</span>` :
+                    `${product.price} TL`;
+                document.getElementById('productPrice').innerHTML = priceDisplay;
+                document.getElementById('addToCartBtn').onclick = () => {
+                    const quantity = parseInt(document.getElementById('quantity').value);
+                    for (let i = 0; i < quantity; i++) {
+                        addToCart(productId);
+                    }
+                    alert(quantity + ' adet ürün sepete eklendi!');
+                };
+
+                // Benzer ürünleri göster (örnek olarak rastgele ürünler)
+                const similarProductsContainer = document.getElementById('similarProducts');
+                const similarProducts = products.filter(p => p.id !== productId).slice(0, 4);
+                similarProducts.forEach(p => {
+                    const discountedPrice = p.discount ? (p.price * (1 - p.discount)).toFixed(2) : p.price;
+                    const priceDisplay = p.discount ?
+                        `<span class="text-decoration-line-through text-muted small">${p.price} TL</span> <span class="text-danger fw-bold">${discountedPrice} TL</span>` :
+                        `${p.price} TL`;
+                    const col = document.createElement('div');
+                    col.className = 'col-md-3 mb-3';
+                    col.innerHTML = `
+                        <div class="card h-100">
+                            <img src="${p.image}" class="card-img-top" alt="${p.name}">
+                            <div class="card-body">
+                                <h6 class="card-title">${p.name}</h6>
+                                <p class="card-text">${priceDisplay}</p>
+                                <a href="product-detail.html?id=${p.id}" class="btn btn-primary btn-sm">Detay</a>
+                            </div>
+                        </div>
+                    `;
+                    similarProductsContainer.appendChild(col);
+                });
+            } else {
+                document.body.innerHTML = '<h1>Ürün bulunamadı</h1>';
+            }
+        });
+    </script>
+</body>
+</html>
